@@ -1,0 +1,408 @@
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --main-color: #e31b23;
+  --main-color-lighter: #de9598;
+  --main-light-back: #f4efdc;
+  --main-dark-back: #453c2b;
+  --main-text-light: rgb(238, 218, 193);
+  --main-text-dark: #000000;
+  --accent-bright: #f9a03f;
+  --accent-muted: #948392;
+  --accent-muted-2: #4e937a;
+
+  --font-body-1: "Theano Didot";
+  --font-title: "Ahsing";
+  --font-header-1: "Rosie Brown Serif Demo";
+
+  --title-transition: font-size 1s, color 4s;
+}
+body {
+  background-color: var(--main-light-back);
+  background-size: 60%;
+  /*background-image: url("./assets/backgroundgraphics/back1.jpg");*/
+  background-size: 100%;
+  backdrop-filter: blur(10);
+  background-attachment: fixed;
+  font-family: var(--font-body-1);
+  margin: 0px;
+  color: var(--main-text-dark);
+}
+
+/*General theme*/
+a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+a:hover {
+  text-decoration: underline 1px;
+}
+
+img {
+  display: inline-block;
+  width: 40%;
+}
+
+img.right {
+  float: left;
+  margin: 5px;
+}
+
+img.center {
+}
+
+p {
+  text-align: justify;
+}
+
+div.wrap {
+  float: right;
+  margin: 5px;
+}
+h2 {
+  font-family: var(--font-header-1);
+  font-size: large;
+  text-decoration: none;
+  font-weight: lighter;
+
+  letter-spacing: 5px;
+  padding: 0;
+  margin: 0;
+  font-size: 100px;
+}
+
+li {
+  list-style: none;
+}
+
+br.on-focus {
+  display: none;
+}
+
+/*constant elements*/
+div#page-container {
+  margin-left: 200px;
+  margin-right: 200px;
+  padding: 40px;
+}
+
+div#title-container {
+  color: inherit;
+}
+h1#title {
+  font-weight: 100;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: var(--font-title);
+  color: var(--main-color);
+  transition: var(--title-transition);
+}
+h1#title.on-home {
+  font-size: 80px;
+  line-height: 70px;
+  color: white;
+  transition: var(--title-transition);
+}
+
+div ul.nav {
+  display: grid;
+  grid-template-columns:
+    calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6)
+    calc(100% / 6) calc(100% / 6);
+  text-align: center;
+  list-style-type: none;
+  padding: 0px;
+  margin-left: 30%;
+  margin-right: 30%;
+  font-size: small;
+}
+@media screen and (max-width: 1150px) {
+  div ul.nav {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+div ul.nav li {
+  text-transform: lowercase;
+  padding: 10px;
+  border: rgba(0, 0, 0, 0) 1px solid;
+  color: var(--main-text-dark);
+}
+div ul.nav li:first-child:nth-last-child(1) {
+  width: 100%;
+}
+div ul.nav li:hover {
+  /*border: var(--main-color) 1px solid;*/
+  color: var(--main-color);
+}
+
+footer {
+  padding: 30px;
+  padding-left: 23%;
+  padding-right: 23%;
+  margin-top: 30px;
+}
+
+footer div.column-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: center;
+  border-top: #000000 solid 1px;
+  border-bottom: #000000 solid 1px;
+}
+
+footer div.column-container div {
+  padding: 10px;
+  font-style: italic;
+
+  align-items: center;
+}
+
+footer div div.column-one {
+  text-align: right;
+}
+footer div div.column-two {
+}
+
+h2.welcome-txt {
+  text-align: center;
+}
+/*Resojirsfn*/
+#resources-page div.intro {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+#resources-page div.intro img {
+  width: 100%;
+}
+
+#resources-page div.folder iframe {
+  border: none;
+  width: 100%;
+  height: 400px;
+  font-family: var(--font-header-1);
+  background-color: #f9a03f;
+}
+/*arc*/
+
+#archive-page div.intro {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+#archive-page div.intro img {
+  width: 100%;
+}
+#archive-page div.folder {
+  width: 100%;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 35% 65%;
+  justify-items: center;
+  align-items: center;
+}
+#archive-page div.folder .descript {
+  padding: 20px;
+}
+#archive-page div.folder h3 {
+  font-size: 30px;
+}
+#archive-page div.folder iframe {
+  border: none;
+  width: 100%;
+  height: 400px;
+  padding: 20px;
+  color: #000000;
+  font-family: var(--font-header-1);
+  background-color: transparent;
+}
+
+/*CALENDAR*/
+
+#calendar-page {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  align-items: center;
+  justify-items: center;
+}
+
+#month-calendar {
+  display: grid;
+  grid-template-columns:
+    calc(100% / 7) calc(100% / 7) calc(100% / 7) calc(100% / 7)
+    calc(100% / 7) calc(100% / 7) calc(100% / 7);
+}
+#month-calendar-controller {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+}
+div#calendar-page div#calendar-content {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  padding: 20px;
+}
+div#calendar-page div#calendar-content div#month-calendar-controller {
+  display: grid;
+  grid-template-columns: 33.3333333333% 33.3333333333% 33.3333333333%;
+  text-align: center;
+  margin: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  justify-self: left;
+}
+div#calendar-page div#calendar-content div#month-calendar {
+  display: grid;
+  grid-template-columns: 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857%;
+}
+div#calendar-page div#calendar-content div#month-calendar div {
+  padding: 10px;
+}
+div#calendar-page div#calendar-content div#month-calendar div.table-header {
+  text-align: center;
+}
+div#calendar-page div#calendar-content div#month-calendar div.cell {
+  border-top: 1px solid black;
+  font-family: "Neue Haas Grotesk Text Pro";
+  font-size: 10px;
+}
+div#calendar-page div#calendar-content div#month-calendar div.cell div {
+  padding: 0px;
+  padding-top: 5px;
+  font-weight: 200;
+}
+div#calendar-page
+  div#calendar-content
+  div#month-calendar
+  div.cell
+  div
+  span.name {
+  font-weight: 400;
+}
+div#calendar-page
+  div#calendar-content
+  div#month-calendar
+  div.cell
+  div
+  span.location {
+  font-style: italic;
+}
+div#calendar-page
+  div#calendar-content
+  div#month-calendar
+  div.cell
+  div:hover
+  span.name {
+  border-bottom: 1px black solid;
+}
+div#calendar-page
+  div#calendar-content
+  div#month-calendar
+  div.cell
+  div:hover
+  span.location {
+  border-bottom: 1px black solid;
+}
+div#calendar-page
+  div#calendar-content
+  div#month-calendar
+  div.cell
+  div.one-time {
+  border-radius: 5px;
+  border: none;
+  color: black;
+}
+div#calendar-page div#calendar-content div#month-calendar div.month-cal {
+  min-height: 80px;
+}
+div#calendar-page div#calendar-content div#month-calendar div.previous-month,
+div#calendar-page div#calendar-content div#month-calendar div.next-month {
+  color: lightcoral;
+}
+div#calendar-header {
+  padding-top: 40px;
+  display: flex;
+}
+div#calendar-header img {
+  width: 80%;
+  float: left;
+}
+div#calendar-page div#event-details {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+/*About Page*/
+div.about-card-container {
+  display: grid;
+  grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+}
+
+div.about-card-container div.card {
+  margin: 10px;
+  padding: 35px;
+  border: #000000 solid 1px;
+}
+
+div.about-card-container div.card h5 {
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  font-size: 30px;
+}
+div.about-card-container div.card h6 {
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+  font-size: large;
+}
+div.about-card-container div.card img.card-img-top {
+  width: 100%;
+}
+
+/*Resources Page*/
+div.resources.page-header {
+}
+
+@font-face {
+  font-family: "Ahsing Regular";
+  src: url("../assets/fonts/ahsing-regular.otf");
+}
+
+@font-face {
+  font-family: "Arapey Regular";
+  src: url("../assets/Arapey-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Arapey Italic";
+  src: url("../assets/Arapey-Italic.ttf");
+}
+
+@media screen and (max-width: 750px) {
+  div ul.nav {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  div ul.nav {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+}
+@media screen and (max-width: 515px) {
+  div ul.nav {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  footer div.column-container {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}

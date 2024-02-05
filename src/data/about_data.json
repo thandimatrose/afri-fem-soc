@@ -1,0 +1,16 @@
+{"people" : 
+    [ 
+        {
+            "name" : "Thandi Matrose",
+            "role" : "Treasurer",
+            "bio" : "I am person",
+            "social" : "https://youtube.com#youtube"
+        }, 
+        {
+            "name" :"Freda Caulo",
+            "role" : "Artiste",
+            "bio" : "i am person + painter",
+            "social" : "https://instagram.com/fridac/#instagram"
+        }
+    ]
+}
