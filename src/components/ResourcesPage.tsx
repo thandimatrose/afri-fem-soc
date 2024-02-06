@@ -5,12 +5,6 @@ const ResourcesPage = () => {
         <div className="resources page-header">
           <div>
             <div id="resources-page" className="wrap">
-              <div className="intro">
-                <img
-                  src="/backgroundgraphics/resourcesback1.png"
-                  className="centre"
-                />
-              </div>
               <div>
                 <h2>Resources</h2>
                 <p className="wrap">

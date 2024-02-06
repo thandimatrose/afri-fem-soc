@@ -17,16 +17,22 @@ const AboutPage = ({ data }: AboutPageProps) => {
         title={currPerson[1]}
         biography={currPerson[2]}
         social="https://youtube.com"
-        socialType="Youtube"
-      ></AboutCard>
+        socialType="Youtube"></AboutCard>
     );
   }
 
   console.log(aboutCards.length);
 
   return (
-    <div>
+    <div id="about-page">
       <h2>About Us</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est voluptates
+        suscipit, ut quas dolorem ullam provident, soluta nostrum eligendi,
+        saepe cumque molestias nulla nisi facilis illum magni! Nihil quia iure
+        quis placeat aspernatur officia dolorem ducimus corrupti at labore hic
+        vel, nam unde temporibus sunt consequuntur. Eius totam est harum.
+      </p>
       <div className="about-card-container">{aboutCards}</div>
     </div>
   );

@@ -4,7 +4,7 @@ const ArchivePage = () => {
       <div className="intro">
         <img src="/backgroundgraphics/archiveback1.png" className="centre" />
         <div>
-          <h2> Our Archive</h2>
+          <h2>Our Archive</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
             debitis itaque, eligendi veritatis nihil animi autem dolorum
@@ -16,7 +16,7 @@ const ArchivePage = () => {
       </div>
       <div className="folder">
         <div className="descript">
-          <h3>Our Charter</h3>
+          <h3>{"{ Our Charter }"}</h3>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             Repudiandae ipsam omnis adipisci quas molestias a ipsa rem explicabo
@@ -24,16 +24,16 @@ const ArchivePage = () => {
             aperiam, voluptas porro nemo.
           </p>
         </div>
-        <iframe
-          src="https://docs.google.com/viewer?srcid=1wy7otnRhgDtUjmX2nUeU3s1gFiLCfoshOPiTnIl6law&pid=explorer&efh=false&a=v&chrome=false&embedded=true"
-          width="580px"
-          height="480px"></iframe>
+        <iframe src="https://docs.google.com/viewer?srcid=1wy7otnRhgDtUjmX2nUeU3s1gFiLCfoshOPiTnIl6law&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
       </div>
       <div className="folder">
-        <h3>Our Presentations</h3>
+        <h3>{"{ Our Presentations }"}</h3>
         <iframe
-          className="drive-embed"
+          className="drive-embed grid"
           src="https://drive.google.com/embeddedfolderview?id=1TnmdF7qJxBOGGdaI_gvAGdr_up2ZJf0K#grid"></iframe>
+        <iframe
+          className="drive-embed list"
+          src="https://drive.google.com/embeddedfolderview?id=1TnmdF7qJxBOGGdaI_gvAGdr_up2ZJf0K#list"></iframe>
       </div>
     </div>
   );

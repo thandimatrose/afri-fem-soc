@@ -72,6 +72,7 @@ const Calendar = () => {
             id="event-details"
             className={"column-focus-" + featuredEvent.getDate().getDay()}>
             <div>
+              <h3>Event Details</h3>
               <span className="name">{featuredEvent.getName()}</span>
               <br></br>
               <span className="time">@{featuredEvent.getTime()}</span>

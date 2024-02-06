@@ -61,14 +61,19 @@ div.wrap {
 }
 h2 {
   font-family: var(--font-header-1);
-  font-size: large;
+
   text-decoration: none;
   font-weight: lighter;
 
   letter-spacing: 5px;
   padding: 0;
   margin: 0;
-  font-size: 100px;
+  font-size: 95px;
+}
+
+h3 {
+  padding: 0px;
+  margin: 0px;
 }
 
 li {
@@ -81,12 +86,13 @@ br.on-focus {
 
 /*constant elements*/
 div#page-container {
-  margin-left: 200px;
-  margin-right: 200px;
-  padding: 40px;
+  margin-left: 8%;
+  margin-right: 8%;
+  padding: 1%;
 }
 
 div#title-container {
+  margin-top: 80px;
   color: inherit;
 }
 h1#title {
@@ -101,27 +107,19 @@ h1#title {
 h1#title.on-home {
   font-size: 80px;
   line-height: 70px;
-  color: white;
+
   transition: var(--title-transition);
 }
 
 div ul.nav {
   display: grid;
-  grid-template-columns:
-    calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6)
-    calc(100% / 6) calc(100% / 6);
+  grid-template-columns: auto auto auto auto auto auto;
   text-align: center;
   list-style-type: none;
   padding: 0px;
   margin-left: 30%;
   margin-right: 30%;
-  font-size: small;
-}
-@media screen and (max-width: 1150px) {
-  div ul.nav {
-    margin-left: 15%;
-    margin-right: 15%;
-  }
+  font-size: 18px;
 }
 
 div ul.nav li {
@@ -144,13 +142,29 @@ footer {
   padding-right: 23%;
   margin-top: 30px;
 }
+footer div.content-container {
+  border-top: #000000 solid 1px;
+  border-bottom: #000000 solid 1px;
+}
+footer div.content-container h3 {
+  padding-top: 30px;
+  text-align: center;
+  line-height: 100%;
+  font-size: 190%;
+}
+footer div.content-container h4 {
+  text-align: center;
+  line-height: 15px;
+  font-style: italic;
+  font-weight: 100;
+  margin: 0;
+  padding-top: 5px;
+}
 
 footer div.column-container {
   display: grid;
   grid-template-columns: 40% 60%;
   align-items: center;
-  border-top: #000000 solid 1px;
-  border-bottom: #000000 solid 1px;
 }
 
 footer div.column-container div {
@@ -190,6 +204,8 @@ h2.welcome-txt {
 #archive-page div.intro {
   display: grid;
   grid-template-columns: 40% 60%;
+
+  align-items: center;
 }
 #archive-page div.intro img {
   width: 100%;
@@ -216,6 +232,9 @@ h2.welcome-txt {
   color: #000000;
   font-family: var(--font-header-1);
   background-color: transparent;
+}
+#archive-page div.folder iframe.list {
+  display: none;
 }
 
 /*CALENDAR*/
@@ -333,6 +352,45 @@ div#calendar-page div#event-details {
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
+  border: 1px solid black;
+  width: 100%;
+  height: 400px;
+}
+div#calendar-page div#event-details div {
+  width: 100%;
+  padding: 10px;
+}
+
+/*Newsletter*/
+div#newsletter-page div.header {
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+div#newsletter-page div.header img {
+  justify-self: right;
+  align-self: end;
+  height: max-content;
+  width: 100%;
+}
+div#newsletter-page div.header div {
+  align-self: center;
+}
+
+div#newsletter-page div.newsletter-copy img {
+  width: 50%;
+  padding: 15px;
+}
+div#newsletter-page div.newsletter-copy img.right {
+  float: right;
+}
+div#newsletter-page div.newsletter-copy img.left {
+  float: left;
+}
+div#newsletter-page div.newsletter-copy {
+  column-count: 2;
+  column-gap: 4%;
+
+  flex-wrap: wrap;
 }
 
 /*About Page*/
@@ -382,10 +440,66 @@ div.resources.page-header {
   src: url("/src/assets/fonts/theano-didot.ttf");
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1150px) {
   div ul.nav {
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  h2 {
+    font-size: 40px;
+  }
+
+  div#newsletter-page div.header {
+    grid-template-columns: 100%;
+  }
+  div#newsletter-page div.header img {
+    width: 80%;
+    justify-self: center;
+  }
+  div#archive-page div.intro {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-items: center;
+    align-items: center;
+  }
+
+  div#archive-page div.intro img {
+    width: 60%;
+    float: none;
+  }
+  div#archive-page div.folder {
+    width: 100%;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 100%;
+    justify-items: center;
+    align-items: center;
+  }
+  div#archive-page div.folder .descript {
+    padding: 20px;
+  }
+  #archive-page div.folder h3 {
+    text-align: center;
+    font-size: 20px;
+  }
+  #archive-page div.folder iframe {
+    border: none;
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+    color: #000000;
+    font-family: var(--font-header-1);
+    background-color: transparent;
+  }
+  div#about-page div.about-card-container {
+    grid-template-columns: 50% 50%;
+  }
+  footer {
+    padding-left: 6%;
+    padding-right: 6%;
   }
 }
 
@@ -393,15 +507,70 @@ div.resources.page-header {
   div ul.nav {
     margin-left: 8%;
     margin-right: 8%;
+    grid-template-columns: 100%;
+  }
+  #archive-page div.folder iframe.grid {
+    display: none;
+    width: 100%;
+  }
+  #archive-page div.folder iframe.list {
+    display: block;
+  }
+  /*Newsletter*/
+  div#newsletter-page img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  div#newsletter-page img.right {
+    float: none;
+  }
+  div#newsletter-page img.left {
+    float: none;
+  }
+  div#newsletter-page div.newsletter-copy {
+    column-count: 1;
+    column-gap: 4%;
+    flex-wrap: wrap;
   }
 }
+
 @media screen and (max-width: 515px) {
   div ul.nav {
-    margin-left: 8%;
-    margin-right: 8%;
+    grid-template-columns: 100%;
+  }
+  div#about-page div.about-card-container {
+    grid-template-columns: 100%;
   }
   footer div.column-container {
     display: grid;
     grid-template-columns: 100%;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  footer {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  footer div.column-one ul {
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: right;
+    margin-bottom: 0px;
+  }
+  footer div.column-one ul li {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  footer div.column-one ul li:nth-child(2) {
+    text-align: left;
+  }
+  footer div.column-one ul li:nth-child(4) {
+    text-align: left;
+  }
+  footer div.column-one ul li:nth-child(6) {
+    text-align: left;
   }
 }

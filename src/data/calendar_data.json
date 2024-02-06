@@ -3,45 +3,45 @@
     {
       "oneTime": [
         {
-          "name": "Cultural Significance of Meat-eating - a Discussion",
+          "name": "A Presentation",
           "date": [2, 2, 2024],
           "location": "Leslie 2B",
-          "info": "",
+          "info": "This is event info",
           "link": "https://youtube.com#youtube"
         },
         {
           "name": "Reading",
           "date": [2, 1, 2024],
           "location": "Leslie 2B",
-          "info": "I am person",
+          "info": "This is event info",
           "link": "https://youtube.com#youtube"
         },
         {
           "name": "Book Reading",
           "date": [22, 1, 2024],
           "location": "Leslie 2B",
-          "info": "I am person",
+          "info": "This is event info",
           "link": "https://youtube.com#youtube"
         },
         {
           "name": "Book Reading",
           "date": [14, 1, 2024],
           "location": "Leslie 2B",
-          "info": "I am person",
+          "info": "This is event info",
           "link": "https://youtube.com#youtube"
         },
         {
           "name": "Book Reading",
           "date": [2, 8, 2024],
           "location": "Leslie 2B",
-          "info": "I am person",
+          "info": "This is event info",
           "link": "https://youtube.com#youtube"
         },
         {
           "name": "Book2 Reading",
           "date": [2, 2, 2024],
           "location": "Leslie 2B",
-          "info": "I am person",
+          "info": "This is event info",
           "link": "https://youtube.com#youtube"
         }
       ]

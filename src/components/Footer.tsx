@@ -16,22 +16,32 @@ const Footer = ({ pages, onSelectPage }: FooterProps) => {
   }
   return (
     <footer>
-      <div className="column-container">
-        <div className="column-one">
-          <p></p>
-          <ul>{columnOne}</ul>
-        </div>
-        <div className="column-two">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            molestie nisl eu massa gravida facilisis. Donec vulputate eu tortor
-            ut laoreet. Pellentesque tempor justo id mauris congue pretium id ac
-            diam. Sed tempor ultrices facilisis. Sed in pretium ante. Donec id
-            massa aliquet, porta arcu ut, tincidunt enim.
-          </p>
+      <div className="content-container">
+        <h3>African Feminist Society</h3>
+        <h4>
+          University of Cape Town <br />
+          Rondebosch, 7700
+          <br />
+          Cape Town
+        </h4>
+        <div className="column-container">
+          <div className="column-one">
+            <ul>{columnOne}</ul>
+          </div>
+          <div className="column-two">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              molestie nisl eu massa gravida facilisis. Sed in pretium ante.
+              Donec id massa aliquet, porta arcu ut, tincidunt enim.
+              <br />
+              <br />
+              Contact Us
+              <br />
+              +27(0) 21 566 292nnaaaah
+            </p>
+          </div>
         </div>
       </div>
-      <div></div>
     </footer>
   );
 };
