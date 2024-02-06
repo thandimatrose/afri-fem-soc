@@ -370,17 +370,17 @@ div.resources.page-header {
 
 @font-face {
   font-family: "Ahsing Regular";
-  src: url("/src/assets/fonts/AHSING-REGULAR.OTF");
+  src: url("/src/assets/fonts/ahsing-regula.otf");
 }
 
 @font-face {
   font-family: "Rosie Brown Serif";
-  src: url("/src/assets/fonts/ROSIE\ BROWN\ SERIF\ DEMO.OTF");
+  src: url("/src/assets/fonts/rosie-brown-serif.otf");
 }
 
 @font-face {
   font-family: "Theano Didot Reg";
-  src: url("/src/assets/fonts/THEANODIDOT-REGULAR.TTF");
+  src: url("/src/assets/fonts/theano-didot.ttf");
 }
 
 @media screen and (max-width: 750px) {
