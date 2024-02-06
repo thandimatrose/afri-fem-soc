@@ -326,7 +326,6 @@ div#calendar-header {
   display: flex;
 }
 div#calendar-header img {
-  width: 80%;
   float: left;
 }
 div#calendar-page div#event-details {

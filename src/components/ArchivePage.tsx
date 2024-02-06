@@ -2,10 +2,7 @@ const ArchivePage = () => {
   return (
     <div id="archive-page" className="page-container">
       <div className="intro">
-        <img
-          src="src/assets/backgroundgraphics/archiveback1.png"
-          className="centre"
-        />
+        <img src="/backgroundgraphics/archiveback1.png" className="centre" />
         <div>
           <h2> Our Archive</h2>
           <p>

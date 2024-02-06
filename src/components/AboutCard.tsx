@@ -17,7 +17,7 @@ const AboutCard = ({
     <div className="card">
       <img
         className="card-img-top"
-        src="src/assets/about/mphatso.jpg"
+        src="/backgroundgraphics/mphatso.jpg"
         alt="image of person"
       />
       <div className="card-body">

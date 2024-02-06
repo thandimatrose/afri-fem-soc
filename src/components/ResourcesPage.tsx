@@ -7,7 +7,7 @@ const ResourcesPage = () => {
             <div id="resources-page" className="wrap">
               <div className="intro">
                 <img
-                  src="src/assets/backgroundgraphics/resourcesback1.png"
+                  src="/backgroundgraphics/resourcesback1.png"
                   className="centre"
                 />
               </div>

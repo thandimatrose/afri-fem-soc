@@ -61,10 +61,7 @@ const Calendar = () => {
     <>
       <div className={"page-container"}>
         <div id="calendar-header">
-          <img
-            src="src/assets/backgroundgraphics/calendarback1.png"
-            className="centre"
-          />
+          <img src="/backgroundgraphics/calendarback1.png" className="centre" />
           <h2>
             Monthly <br />
             Calendar
