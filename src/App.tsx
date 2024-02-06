@@ -12,8 +12,6 @@ import Calendar from "./components/Calendar";
 
 //import * as fs from "fs";
 
-interface Timekeeper {}
-
 function App() {
   const pages = [
     "Home",

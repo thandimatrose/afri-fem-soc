@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import MonthCal from "./MonthCal";
 
 class CalendarEvent {
@@ -51,8 +51,6 @@ const Calendar = () => {
   const [featuredEvent, setFeaturedEvent] = useState(
     new CalendarEvent([new Date(), "", "", "", ""])
   );
-  const thisMonth = new Date().getMonth();
-  const thisYear = new Date().getFullYear();
 
   console.log("column-focus-" + featuredEvent.getDate().getDay);
 
@@ -99,8 +97,14 @@ const Calendar = () => {
                   details: string
                 ]
               ) => setFeaturedEvent(new CalendarEvent(event))}
-              onBackMonth={() => setMonth((month + 11) % 12)}
-              onForwardMonth={() => setMonth((month + 1) % 12)}></MonthCal>
+              onBackMonth={() => {
+                setMonth((month + 11) % 12);
+                setYear(year - Math.floor((12 - month) / 12));
+              }}
+              onForwardMonth={() => {
+                setMonth((month + 1) % 12);
+                setYear(year + Math.floor((month + 1) / 12));
+              }}></MonthCal>
           </div>
         </div>
       </div>
