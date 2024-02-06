@@ -11,9 +11,9 @@
   --accent-muted: #948392;
   --accent-muted-2: #4e937a;
 
-  --font-body-1: "Theano Didot";
-  --font-title: "Ahsing";
-  --font-header-1: "Rosie Brown Serif Demo";
+  --font-body-1: "Theano Didot Reg";
+  --font-title: "Ahsing Regular";
+  --font-header-1: "Rosie Brown Serif";
 
   --title-transition: font-size 1s, color 4s;
 }
@@ -370,17 +370,17 @@ div.resources.page-header {
 
 @font-face {
   font-family: "Ahsing Regular";
-  src: url("../assets/fonts/ahsing-regular.otf");
+  src: url("/src/assets/fonts/AHSING-REGULAR.OTF");
 }
 
 @font-face {
-  font-family: "Arapey Regular";
-  src: url("../assets/Arapey-Regular.ttf");
+  font-family: "Rosie Brown Serif";
+  src: url("/src/assets/fonts/ROSIE\ BROWN\ SERIF\ DEMO.OTF");
 }
 
 @font-face {
-  font-family: "Arapey Italic";
-  src: url("../assets/Arapey-Italic.ttf");
+  font-family: "Theano Didot Reg";
+  src: url("/src/assets/fonts/THEANODIDOT-REGULAR.TTF");
 }
 
 @media screen and (max-width: 750px) {
