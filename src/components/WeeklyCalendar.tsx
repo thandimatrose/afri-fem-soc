@@ -1,12 +1,6 @@
-import { ReactNode, useState } from "react";
-import Calendar from "./Calendar";
+import { ReactNode } from "react";
 
-const shortenDay = (longDay: string) => {
-  let shortDay = longDay.replace("day", "");
-  return shortDay.length > 4 ? shortDay.slice(0, 3) : shortDay;
-};
-
-const [week, setWeek] = useState(2);
+//const [week, setWeek] = useState(2);
 const today = new Date();
 console.log(today.getFullYear());
 

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import MonthCal from "./MonthCal";
 import WeeklyCalendar from "./WeeklyCalendar";
 
 class CalendarEvent {
@@ -55,9 +54,7 @@ const Calendar = () => {
 
   console.log("column-focus-" + featuredEvent.getDate().getDay);
 
-  const [year, setYear] = useState(2024);
-  const [month, setMonth] = useState(2);
-
+  setFeaturedEvent(new CalendarEvent([new Date(), "", "", "", ""]));
   return (
     <>
       <div className={"page-container"}>
