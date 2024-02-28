@@ -1,5 +1,4 @@
 import { useState } from "react";
-import WeeklyCalendar from "./WeeklyCalendar";
 
 class CalendarEvent {
   private date: Date;
@@ -60,9 +59,7 @@ const Calendar = () => {
       <div className={"page-container"}>
         <div className="calendar-container">
           <div id="calendar-page">
-            <div id="calendar-content">
-              <WeeklyCalendar></WeeklyCalendar>
-            </div>
+            <div id="calendar-content"></div>
             <div
               id="event-details"
               className={"column-focus-" + featuredEvent.getDate().getDay()}>
