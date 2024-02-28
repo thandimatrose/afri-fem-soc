@@ -1,5 +1,6 @@
 import { useState } from "react";
 import MonthCal from "./MonthCal";
+import WeeklyCalendar from "./WeeklyCalendar";
 
 class CalendarEvent {
   private date: Date;
@@ -60,49 +61,35 @@ const Calendar = () => {
   return (
     <>
       <div className={"page-container"}>
-        <div id="calendar-header">
-          <img src="/backgroundgraphics/calendarback1.png" className="centre" />
-          <h2>
-            Monthly <br />
-            Calendar
-          </h2>
-        </div>
-        <div id="calendar-page">
-          <div
-            id="event-details"
-            className={"column-focus-" + featuredEvent.getDate().getDay()}>
-            <div>
-              <h3>Event Details</h3>
-              <span className="name">{featuredEvent.getName()}</span>
-              <br></br>
-              <span className="time">@{featuredEvent.getTime()}</span>
-              <br></br>
-              <span className="location">{featuredEvent.getLocation()}</span>
-              <br></br>
-              <p>{featuredEvent.getDetails()}</p>
+        <div className="calendar-container">
+          <div id="calendar-page">
+            <div id="calendar-content">
+              <WeeklyCalendar></WeeklyCalendar>
             </div>
+            <div
+              id="event-details"
+              className={"column-focus-" + featuredEvent.getDate().getDay()}>
+              <div>
+                <h3>Event Details</h3>
+                <span className="name">{featuredEvent.getName()}</span>
+                <br></br>
+                <span className="time">@{featuredEvent.getTime()}</span>
+                <br></br>
+                <span className="location">{featuredEvent.getLocation()}</span>
+                <br></br>
+                <p>{featuredEvent.getDetails()}</p>
+              </div>
+            </div>
+            <img
+              src="/backgroundgraphics/calendarback1.png"
+              className="centre"
+            />
           </div>
-          <div id="calendar-content">
-            <MonthCal
-              month={month}
-              year={year}
-              onEventClick={(
-                event: [
-                  date: Date,
-                  time: string,
-                  name: string,
-                  location: string,
-                  details: string
-                ]
-              ) => setFeaturedEvent(new CalendarEvent(event))}
-              onBackMonth={() => {
-                setMonth((month + 11) % 12);
-                setYear(year - Math.floor((12 - month) / 12));
-              }}
-              onForwardMonth={() => {
-                setMonth((month + 1) % 12);
-                setYear(year + Math.floor((month + 1) / 12));
-              }}></MonthCal>
+          <div id="calendar-header">
+            <h2>
+              Weekly <br />
+              Calendar
+            </h2>
           </div>
         </div>
       </div>

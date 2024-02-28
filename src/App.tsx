@@ -2,7 +2,6 @@ import { ReactNode, useState } from "react";
 import NavigationBar from "./components/NavigationBar";
 import AboutPage from "./components/AboutPage";
 import HomePage from "./components/HomePage";
-import NewsletterPage from "./components/NewsletterPage";
 import ArchivePage from "./components/ArchivePage";
 import "./App.css";
 import Footer from "./components/Footer";
@@ -13,14 +12,7 @@ import Calendar from "./components/Calendar";
 //import * as fs from "fs";
 
 function App() {
-  const pages = [
-    "Home",
-    "Calendar",
-    "About",
-    "Newsletter",
-    "Resources",
-    "Archive",
-  ];
+  const pages = ["Home", "Calendar", "About", "Resources", "Archive"];
   const [page, setPage] = useState("Home");
 
   //About
@@ -67,7 +59,7 @@ function App() {
 
     <Calendar></Calendar>,
     <AboutPage data={aboutData} />,
-    <NewsletterPage />,
+
     <ResourcesPage></ResourcesPage>,
     <ArchivePage />,
   ];

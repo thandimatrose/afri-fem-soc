@@ -1,0 +1,20 @@
+<MonthCal
+              month={month}
+              year={year}
+              onEventClick={(
+                event: [
+                  date: Date,
+                  time: string,
+                  name: string,
+                  location: string,
+                  details: string
+                ]
+              ) => setFeaturedEvent(new CalendarEvent(event))}
+              onBackMonth={() => {
+                setMonth((month + 11) % 12);
+                setYear(year - Math.floor((12 - month) / 12));
+              }}
+              onForwardMonth={() => {
+                setMonth((month + 1) % 12);
+                setYear(year + Math.floor((month + 1) / 12));
+              }}></MonthCal>

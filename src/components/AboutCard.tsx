@@ -22,11 +22,7 @@ const AboutCard = ({
       />
       <div className="card-body">
         <h5 className="card-title">{name}</h5>
-        <h6 className="card-subtitle">{title}</h6>
         <p className="card-text">{biography}</p>
-        <a href={social} className="btn btn-primary">
-          {socialType}
-        </a>
       </div>
     </div>
   );

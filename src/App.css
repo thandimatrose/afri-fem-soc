@@ -20,8 +20,7 @@
 body {
   background-color: var(--main-light-back);
   background-size: 60%;
-  /*background-image: url("./assets/backgroundgraphics/back1.jpg");*/
-  background-size: 100%;
+
   backdrop-filter: blur(10);
   background-attachment: fixed;
   font-family: var(--font-body-1);
@@ -239,13 +238,17 @@ h2.welcome-txt {
 
 /*CALENDAR*/
 
-#calendar-page {
-  display: grid;
-  grid-template-columns: 80% 20%;
+div#calendar-page {
   align-items: center;
   justify-items: center;
 }
 
+div#calendar-header img {
+  height: 100px;
+  width: auto;
+}
+div#calendar-header h2 {
+}
 #month-calendar {
   display: grid;
   grid-template-columns:
@@ -257,10 +260,6 @@ h2.welcome-txt {
   grid-template-columns: 10% 80% 10%;
 }
 div#calendar-page div#calendar-content {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 4;
   padding: 20px;
 }
 div#calendar-page div#calendar-content div#month-calendar-controller {
@@ -341,17 +340,27 @@ div#calendar-page div#calendar-content div#month-calendar div.next-month {
   color: lightcoral;
 }
 div#calendar-header {
-  padding-top: 40px;
-  display: flex;
+  align-items: center;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 100%;
+  padding: 0;
+  margin: 0;
+  text-orientation: mixed;
+  writing-mode: vertical-rl;
+  text-align: left;
+  justify-self: start;
+  align-self: start;
 }
-div#calendar-header img {
-  float: left;
+div#calendar-page img {
+  padding: auto auto;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+  text-align: center;
+  grid-column: span 2;
 }
 div#calendar-page div#event-details {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
   border: 1px solid black;
   width: 100%;
   height: 400px;
@@ -359,6 +368,68 @@ div#calendar-page div#event-details {
 div#calendar-page div#event-details div {
   width: 100%;
   padding: 10px;
+}
+
+div#calendar-page div#weekly-cal {
+  display: grid;
+  grid-template-columns: 100%;
+  justify-items: center;
+}
+
+div#calendar-page div#weekly-cal .controller {
+  width: 60%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+}
+
+div#calendar-page div#weekly-cal div#calendar-days {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+div#calendar-page div#weekly-cal div#calendar-days .day {
+  border-bottom: solid black 1px;
+  padding: 10px;
+  margin: 10px 0;
+  height: 120px;
+  display: grid;
+  grid-template-columns: 5% 95%;
+  align-items: center;
+  justify-items: center;
+}
+
+div#calendar-page div#weekly-cal div#calendar-days .day p {
+  padding: 0;
+  margin: 0;
+}
+div#calendar-page div#weekly-cal div#calendar-days .day div {
+  padding: 0;
+  margin: 0;
+}
+
+#page-container .calendar-container {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  padding: 0 90px;
+}
+
+div#calendar-page div#weekly-cal div#calendar-days .day h5 {
+  padding: 0;
+  margin: 0;
+  writing-mode: vertical-rl;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Swis721";
+  font-size: 16px;
+}
+div#calendar-page div#weekly-cal div#calendar-days .day div {
+  padding: 10px;
+}
+div#calendar-page div#weekly-cal div#calendar-days .day div h6 {
+  padding: 0;
+  margin: 0;
 }
 
 /*Newsletter*/
