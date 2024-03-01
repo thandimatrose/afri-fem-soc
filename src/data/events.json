@@ -1,0 +1,40 @@
+{
+  "events": [
+    {
+      "name": "Feminism 102",
+      "leader": "Emma",
+      "type": "Consciousness Raising",
+      "date": [29, 1, 2024],
+      "location": "Leslie 1B",
+      "info": "",
+      "link": ""
+    },
+    {
+      "name": "Presentation",
+      "leader": "",
+      "type": "Community Building",
+      "date": [7, 2, 2024],
+      "location": "Leslie 2B",
+      "info": "",
+      "link": ""
+    },
+    {
+      "name": "Discussion",
+      "leader": "",
+      "type": "Consciousness Raising",
+      "date": [14, 2, 2024],
+      "location": "Leslie 2B",
+      "info": "",
+      "link": ""
+    },
+    {
+      "name": "Presentation",
+      "leader": "",
+      "type": "Community Building",
+      "date": [21, 2, 2024],
+      "location": "Leslie 2B",
+      "info": "",
+      "link": ""
+    }
+  ]
+}

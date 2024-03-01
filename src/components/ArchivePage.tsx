@@ -4,8 +4,11 @@ const ArchivePage = () => {
       <div className="intro">
         <img src="/backgroundgraphics/archiveback1.png" className="centre" />
         <div>
-          <h2>Our Archive</h2>
-          <p>
+          <h2>
+            Our
+            <br /> Archive
+          </h2>
+          <p className="hidden">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
             debitis itaque, eligendi veritatis nihil animi autem dolorum
             laboriosam illum aperiam id quisquam repellat magni, voluptas cumque
@@ -16,24 +19,13 @@ const ArchivePage = () => {
       </div>
       <div className="folder">
         <div className="descript">
-          <h3>{"{ Our Charter }"}</h3>
+          <h3>{"Our Charter"}</h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Repudiandae ipsam omnis adipisci quas molestias a ipsa rem explicabo
-            laboriosam aliquam pariatur, aspernatur iusto dolorem, qui ut
-            aperiam, voluptas porro nemo.
+            This charter documents our vision for the society. It includes our
+            guiding principles and what we hope for the society going forward.
           </p>
         </div>
-        <iframe src="https://docs.google.com/viewer?srcid=1wy7otnRhgDtUjmX2nUeU3s1gFiLCfoshOPiTnIl6law&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
-      </div>
-      <div className="folder">
-        <h3>{"{ Our Presentations }"}</h3>
-        <iframe
-          className="drive-embed grid"
-          src="https://drive.google.com/embeddedfolderview?id=1TnmdF7qJxBOGGdaI_gvAGdr_up2ZJf0K#grid"></iframe>
-        <iframe
-          className="drive-embed list"
-          src="https://drive.google.com/embeddedfolderview?id=1TnmdF7qJxBOGGdaI_gvAGdr_up2ZJf0K#list"></iframe>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vTPGgxHrTOKFArbYA_h-EeBQNFxCa-QXv7rkNcgK9YfTzJJyVGoz3i_l3_ECm9ZA_1IPiPQMHZOaqTr/pub?embedded=true"></iframe>
       </div>
     </div>
   );

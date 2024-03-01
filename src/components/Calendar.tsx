@@ -1,4 +1,4 @@
-import { useState } from "react";
+import WeeklyCalendar from "./WeeklyCalendar";
 
 class CalendarEvent {
   private date: Date;
@@ -47,33 +47,15 @@ class CalendarEvent {
 //const EmptyDate = new CalendarEvent();
 
 const Calendar = () => {
-  const [featuredEvent, setFeaturedEvent] = useState(
-    new CalendarEvent([new Date(), "", "", "", ""])
-  );
-
-  console.log("column-focus-" + featuredEvent.getDate().getDay);
-
-  setFeaturedEvent(new CalendarEvent([new Date(), "", "", "", ""]));
   return (
     <>
       <div className={"page-container"}>
         <div className="calendar-container">
           <div id="calendar-page">
-            <div id="calendar-content"></div>
-            <div
-              id="event-details"
-              className={"column-focus-" + featuredEvent.getDate().getDay()}>
-              <div>
-                <h3>Event Details</h3>
-                <span className="name">{featuredEvent.getName()}</span>
-                <br></br>
-                <span className="time">@{featuredEvent.getTime()}</span>
-                <br></br>
-                <span className="location">{featuredEvent.getLocation()}</span>
-                <br></br>
-                <p>{featuredEvent.getDetails()}</p>
-              </div>
+            <div id="calendar-content">
+              <WeeklyCalendar></WeeklyCalendar>
             </div>
+
             <img
               src="/backgroundgraphics/calendarback1.png"
               className="centre"
@@ -81,7 +63,7 @@ const Calendar = () => {
           </div>
           <div id="calendar-header">
             <h2>
-              Weekly <br />
+              Weekly <br /> 
               Calendar
             </h2>
           </div>

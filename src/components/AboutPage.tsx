@@ -25,10 +25,21 @@ const AboutPage = ({ data }: AboutPageProps) => {
 
   return (
     <div id="about-page">
-      <h2>About Us</h2>
-      <p>Contexxxxt</p>
+      <img className="main-image" src="backgroundgraphics/organise.png" />
+      <h2>Organisers</h2>
       <div className="about-card-container">{aboutCards}</div>
-      <div></div>
+      <div className="contact">
+        <a href="mailto:africanfeministsociety@gmail.com">
+          <div>
+            <img src="./logo.jpg" />
+            <p>
+              Email Us!
+              <br />
+              <span>africanfeministsociety@gmail.com</span>
+            </p>
+          </div>
+        </a>
+      </div>
     </div>
   );
 };

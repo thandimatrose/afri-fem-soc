@@ -10,7 +10,7 @@ const Footer = ({ pages, onSelectPage }: FooterProps) => {
   for (let i = 0; i < pages.length; i++) {
     columnOne.push(
       <li key={"footer-" + pages[i]} onClick={() => onSelectPage(pages[i])}>
-        {pages[i]}
+        <a>{pages[i]}</a>
       </li>
     );
   }
@@ -30,14 +30,13 @@ const Footer = ({ pages, onSelectPage }: FooterProps) => {
           </div>
           <div className="column-two">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              molestie nisl eu massa gravida facilisis. Sed in pretium ante.
-              Donec id massa aliquet, porta arcu ut, tincidunt enim.
-              <br />
+              Made with love by us :) <br />
               <br />
               Contact Us
               <br />
-              +27(0) 21 566 292nnaaaah
+              <a href="mailto:africanfeministsociety@gmail.com">
+                africanfeministsociety@gmail.com
+              </a>
             </p>
           </div>
         </div>

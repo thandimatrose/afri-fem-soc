@@ -12,7 +12,7 @@ import Calendar from "./components/Calendar";
 //import * as fs from "fs";
 
 function App() {
-  const pages = ["Home", "Calendar", "About", "Resources", "Archive"];
+  const pages = ["Home", "Organising", "Resources", "Archive"];
   const [page, setPage] = useState("Home");
 
   //About
@@ -57,7 +57,6 @@ function App() {
   const pagesNode: ReactNode[] = [
     <HomePage />,
 
-    <Calendar></Calendar>,
     <AboutPage data={aboutData} />,
 
     <ResourcesPage></ResourcesPage>,
@@ -77,6 +76,9 @@ function App() {
       <Footer
         pages={pages}
         onSelectPage={(selectPage: string) => setPage(selectPage)}></Footer>
+      <a href="https://storyset.com/creativity">
+        Creativity illustrations by Storyset
+      </a>
     </>
   );
 }
