@@ -17,7 +17,7 @@ const HomePage = () => {
 
           <div className="intro">
             <p>
-              <img src="/public/logo-smaller.jpg" />
+              <img src="/logo-smaller.jpg" />
               Founded in 2023, we are a community of students who align with the
               values of intersectional African Feminism. Our community is a safe
               space to learn, unlearn and grow based on our{" "}
@@ -46,7 +46,7 @@ const HomePage = () => {
                 Join our Whatsapp Group!{" "}
               </p>
               <div>
-                <img src="/public/whatsappqr.png" />
+                <img src="/whatsappqr.png" />
               </div>
             </div>
           </a>

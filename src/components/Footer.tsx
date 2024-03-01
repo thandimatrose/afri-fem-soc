@@ -34,7 +34,9 @@ const Footer = ({ pages, onSelectPage }: FooterProps) => {
               <br />
               Contact Us
               <br />
-              <a href="mailto:africanfeministsociety@gmail.com">
+              <a
+                href="mailto:africanfeministsociety@gmail.com"
+                onClick={() => {}}>
                 africanfeministsociety@gmail.com
               </a>
             </p>

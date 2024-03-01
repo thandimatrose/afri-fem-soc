@@ -29,9 +29,9 @@ const AboutPage = ({ data }: AboutPageProps) => {
       <h2>Organisers</h2>
       <div className="about-card-container">{aboutCards}</div>
       <div className="contact">
-        <a href="mailto:africanfeministsociety@gmail.com">
+        <a href="mailto:africanfeministsociety@gmail.com" onClick={() => {}}>
           <div>
-            <img src="./logo.jpg" />
+            <img src="logo.jpg" />
             <p>
               Email Us!
               <br />
