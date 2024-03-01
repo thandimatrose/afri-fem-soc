@@ -678,7 +678,7 @@ div#about-page h2 {
     padding: 30px;
     margin: 20px auto;
     align-content: center;
-    width: 500px;
+    width: 50%;
   }
 
   div#about-page .contact div img{
@@ -855,7 +855,9 @@ div#resources-page div.intro p {
   div#about-page div.about-card-container {
     grid-template-columns: 50% 50%;
   }
-
+div#about-page .contact {
+  display: none;
+}
   
   
 
