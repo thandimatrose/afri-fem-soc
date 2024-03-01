@@ -6,14 +6,7 @@ interface AboutCardProps {
   socialType: string;
 }
 
-const AboutCard = ({
-  name,
-  title,
-  biography,
-  social,
-  socialType,
-}: AboutCardProps) => {
-
+const AboutCard = ({ name }: AboutCardProps) => {
   return (
     <div className="card">
       <div className="card-body">
