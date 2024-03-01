@@ -752,7 +752,7 @@ h1#title span { font-size: calc(var(--h1-font-size) / 1.825); }
   src: url("/src/assets/fonts/theano-didot.ttf");
 }
 @font-face {
-  font-family: "Swis 721 Lt Bt";
+  font-family: "Swis721 Lt Bt";
   src: url("/src/assets/fonts/swis721-lt-bt.TTF");
 }
 @media screen and (max-width: 1220px) {
