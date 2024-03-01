@@ -802,11 +802,7 @@ div#resources-page div.intro p {
   #archive-page h2 {
     text-align: center;
   }
-  div#home-container h2 {
-    font-size: 80px;
-  }
   div#resources-page h2 {
-    font-size: 80px;
     text-align: center;
   }
   div#home-container {
@@ -871,6 +867,9 @@ div#resources-page div.intro p {
 }
 
 @media screen and (max-width: 750px) {
+  #resources-page div#resource-links div.card-container .card{ 
+    grid-template-columns: 100%;
+  }
   div ul.nav {
     margin-left: 8%;
     margin-right: 8%;
@@ -900,7 +899,10 @@ div#resources-page div.intro p {
     column-gap: 4%;
     flex-wrap: wrap;
   }
-
+div#home-container div div.intro p img{
+    display: block;
+    float: none;
+  }
 
   div#home-container div#calendar-content {
     padding: 0;
@@ -911,6 +913,7 @@ div#resources-page div.intro p {
 }
 
 @media screen and (max-width: 515px) {
+  
   div ul.nav {
     grid-template-columns: 100%;
   }
