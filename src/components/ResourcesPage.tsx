@@ -43,7 +43,10 @@ const ResourcesPage = () => {
               />
               <p className="addtoshared">
                 Have some resources to share?{" "}
-                <a href="https://drive.google.com/drive/folders/1yU_Rcj_IBI-GAhuRUKusbKeumfMSGCLy">
+                <a
+                  target="_blank"
+                  rel="nofollow"
+                  href="https://drive.google.com/drive/folders/1yU_Rcj_IBI-GAhuRUKusbKeumfMSGCLy">
                   Upload to the shared Resources folder :)
                 </a>
               </p>
