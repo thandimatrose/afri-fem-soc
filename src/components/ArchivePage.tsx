@@ -26,6 +26,9 @@ const ArchivePage = () => {
           </p>
         </div>
         <iframe src="https://docs.google.com/document/d/e/2PACX-1vTPGgxHrTOKFArbYA_h-EeBQNFxCa-QXv7rkNcgK9YfTzJJyVGoz3i_l3_ECm9ZA_1IPiPQMHZOaqTr/pub?embedded=true"></iframe>
+        <a href="https://docs.google.com/document/d/1mNHpY-JLKfmJb68zX2DP0MBFBEdQhDcy-H5i-fmtTnI">
+          Open File
+        </a>
       </div>
     </div>
   );
