@@ -12,7 +12,7 @@
   --accent-muted-2: #a0ae9c5a;
 
   --font-body-1: "Theano Didot Reg";
-  --font-body-sans: "Swis721 Lt BT";
+  --font-body-sans: "Swis721 Lt Bt";
   --font-title: "Ahsing Regular";
   --font-header-1: "Rosie Brown Serif";
 
@@ -750,6 +750,10 @@ h1#title span { font-size: calc(var(--h1-font-size) / 1.825); }
 @font-face {
   font-family: "Theano Didot Reg";
   src: url("/src/assets/fonts/theano-didot.ttf");
+}
+@font-face {
+  font-family: "Swis 721 Lt Bt";
+  src: url("/src/assets/fonts/swis721-lt-bt.TTF");
 }
 @media screen and (max-width: 1220px) {
   
